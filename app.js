@@ -355,10 +355,10 @@
     // blok C gaya Scratch: ULANG [n] KALI { badan }
     if (SC.ifblock) { const ib = SC.ifblock;
       slotsHTML += `<div class="s-cblock s-ifb" style="${P(ib.at)};width:${ib.w || 30}%">
-        <div class="cb-head"><span class="cb-t">❓ JIKA</span><div class="slot cbs c" data-i="${ib.cond}"><em>syarat?</em></div></div>
-        <div class="cb-head sub"><span class="cb-t">MAKA</span></div>
-        <div class="cb-mid"><div class="cb-arm"></div><div class="cb-body"><div class="slot cbs" data-i="${ib.then}"><em>tindakan?</em></div></div></div>
-        <div class="cb-else"><span class="cb-t">JIKA TIDAK</span></div>
+        <div class="cb-head"><span class="cb-t">❓ JIKA<small>(kalau)</small></span><div class="slot cbs c" data-i="${ib.cond}"><em>${ib.condPh || 'syarat?'}</em></div></div>
+        <div class="cb-head sub"><span class="cb-t">MAKA<small>(jadi)</small></span></div>
+        <div class="cb-mid"><div class="cb-arm"></div><div class="cb-body"><div class="slot cbs" data-i="${ib.then}"><em>${ib.thenPh || 'tindakan?'}</em></div></div></div>
+        <div class="cb-else"><span class="cb-t">JIKA TIDAK<small>(kalau tidak)</small></span></div>
         <div class="cb-mid"><div class="cb-arm"></div><div class="cb-body"><div class="cb-fixed">${ib.elseText}</div></div></div>
         <div class="cb-foot"></div></div>`; }
     if (SC.cblock) { const cb = SC.cblock;

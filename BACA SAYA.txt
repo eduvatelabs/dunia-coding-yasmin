@@ -45,5 +45,5 @@ DATA KAJIAN
 JAWAPAN CABARAN (dari fail .fla asal)
 - Sequence 1.3 (Pakcik Omar): lurus, kanan, lurus, kiri, kanan, lurus, kiri, naik tangga
 - Loop     : 5 kali
-- Conditional 3.1 : JIKA jalan KANAN kering, cerah & selamat MAKA pergi ke jalan KANAN
+- Conditional 3.1 : JIKA jalan kanan kering MAKA pergi ke kanan
 - Logic 4.1 : ULANG 2×, PILIH KANAN, LURUS, ULANG 5×, ambil kunci  -> tekan KUNCI
