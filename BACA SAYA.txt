@@ -1,0 +1,49 @@
+DUNIA CODING YASMIN — Interactive Storytelling App
+=====================================================
+
+CARA BUKA
+- Double-click "index.html". App akan dibuka dalam browser (Safari/Chrome).
+- Paling sesuai dalam mod landskap (laptop, tablet, atau telefon dipusing).
+- Masukkan nama murid, kemudian tekan MULA. Butang SEQUENCE/LOOP/CONDITIONAL/LOGIC
+  terus ke konsep itu (sama seperti menu asal).
+
+KAWALAN
+- ▶ / ◀ : babak seterusnya / sebelum (atau anak panah papan kekunci)
+- ⏯ Auto : cerita bergerak sendiri selepas suara tamat. Tekan untuk mod Manual.
+- 🔊 : hidup/matikan bunyi
+- 🐱 Petunjuk : bantuan semasa cabaran
+
+STRUKTUR FAIL
+- index.html   : halaman app
+- story.js     : SEMUA teks cerita, gambar, audio dan jawapan cabaran (edit di sini)
+- app.js       : enjin app (tak perlu diubah)
+- style.css    : rupa/warna
+- assets/img   : gambar (.webp)
+- assets/snd   : suara & kesan bunyi (.mp3)
+
+MENUKAR SUARA / GAMBAR
+- Semua dialog menggunakan rakaman suara asal projek.
+- Untuk tukar gambar atau suara, simpan fail baru dalam assets/img atau assets/snd
+  dan tukar nama fail dalam story.js.
+
+MISI (12 aktiviti)
+- SEQUENCE   : 1.1 Yasmin ke air pancut · 1.2 Yasmin ke gelanggang bola keranjang · 1.3 Pakcik Omar ke pejabat (misi akhir)
+- LOOP       : 2.1 Kotak Lim · 2.2 Ringkaskan kod panjang Lim dengan ULANG · 2.3 Bina loop 2 langkah (ambil → letak) untuk air kotak
+- CONDITIONAL: 3.1 Jalan Sarah · 3.2 Hujan→payung / panas→topi · 3.3 Loceng→kelas / masa PJ→padang
+- LOGIC      : 4.1 Taman ke Pintu Koding · 4.2 Cari pepijat dalam program · 4.3 Pintu Koding (misi akhir, pintu terbuka ke makmal)
+- Buka terus satu misi: tambah #misi=NAMA pada hujung alamat index.html
+  (sequence, sequence2, sequence3, loop, loop2, loop3, conditional, conditional2,
+   conditional3, logic, logic2, logic3) — contoh: index.html#misi=loop2
+
+DATA KAJIAN
+- Setiap sesi direkod (nama, masa, dan untuk setiap cabaran: siap, masa (saat),
+  bilangan cubaan, bilangan salah, bilangan petunjuk, skor dan bintang).
+- Lihat di menu "📊 Laporan Kajian" -> "Muat turun CSV" (boleh dibuka dalam Excel).
+- Rekod disimpan dalam browser peranti itu sahaja. Muat turun CSV dari setiap
+  peranti sebelum memadam data browser.
+
+JAWAPAN CABARAN (dari fail .fla asal)
+- Sequence 1.3 (Pakcik Omar): lurus, kanan, lurus, kiri, kanan, lurus, kiri, naik tangga
+- Loop     : 5 kali
+- Conditional : ke kanan (kering, cerah, selamat)
+- Logic 4.1 : ULANG 2×, PILIH KANAN, LURUS, ULANG 5×, ambil kunci  -> tekan KUNCI

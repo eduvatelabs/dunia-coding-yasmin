@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1a3a">
+<title>Dunia Coding Yasmin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@600;800&family=Russo+One&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="frame">
+  <div id="stage">
+    <!-- LAYER CERITA -->
+    <div id="bg"><img id="bgA" alt=""><img id="bgB" alt=""></div>
+    <div id="chars"></div>
+    <div id="fx"></div>
+    <div id="bubble" class="hidden"><div class="who"></div><div class="txt"></div></div>
+    <div id="narr" class="hidden"><div class="txt"></div></div>
+    <div id="title" class="hidden"></div>
+
+    <!-- KAWALAN -->
+    <div id="hud" class="hidden">
+      <button id="btnMenu" class="pill" aria-label="Menu utama">🏠 Menu</button>
+      <div class="spacer"></div>
+      <button id="btnCC" class="pill" aria-label="Sari kata">💬 Sari kata</button>
+      <button id="btnSound" class="pill" aria-label="Bunyi">🔊</button>
+      <button id="btnAuto" class="pill" aria-label="Auto main">⏯ Auto</button>
+    </div>
+    <div id="nav" class="hidden">
+      <button id="btnBack" class="round" aria-label="Kembali">◀</button>
+      <button id="btnNext" class="round big" aria-label="Seterusnya">▶</button>
+    </div>
+    <div id="progress" class="hidden"><i></i></div>
+
+    <!-- CABARAN -->
+    <div id="challenge" class="hidden"></div>
+
+    <!-- SKRIN -->
+    <section id="home" class="screen">
+      <img class="cover-fill" src="assets/img/chatgpt_image_17_mei_2026_04_03_49_ptg.webp" alt="">
+      <div class="cover-box">
+        <img class="cover-img" src="assets/img/chatgpt_image_17_mei_2026_04_03_49_ptg.webp" alt="Dunia Coding Yasmin">
+        <div class="twinkles"><i style="left:31%;top:6%"></i><i style="left:62%;top:4%;animation-delay:.7s"></i><i style="left:82%;top:30%;animation-delay:1.3s"></i><i style="left:12%;top:52%;animation-delay:2s"></i><i style="left:55%;top:44%;animation-delay:1.6s"></i></div>
+        <button class="hot mula" data-go="" aria-label="Mula"><span class="shine"></span></button>
+        <button class="hot cc seq" data-go="sequence" aria-label="Sequence"></button>
+        <button class="hot cc loop" data-go="loop" aria-label="Loop"></button>
+        <button class="hot cc cond" data-go="conditional" aria-label="Conditional"></button>
+        <button class="hot cc logic" data-go="logic" aria-label="Logic"></button>
+        <button id="btnLaporan" class="hot-lap" aria-label="Laporan kajian">📊<span>Laporan</span></button>
+      </div>
+      <div id="namecard" class="hidden">
+        <div class="nc">
+          <div class="nc-top"><img src="assets/img/bitmap_8.webp" alt=""><img src="assets/img/bitmap_5.webp" alt=""></div>
+          <h3>SIAPA NAMA PEMAIN?</h3>
+          <input id="nama" maxlength="40" placeholder="Tulis nama kamu" autocomplete="off">
+          <button id="btnStart" class="m-start"><span>MASUK ▶</span></button>
+          <button id="btnNoName" class="nc-skip">Main tanpa nama</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="laporan" class="screen hidden">
+      <div class="panel">
+        <h2>📊 Laporan Kajian</h2>
+        <p class="muted">Rekod setiap sesi murid disimpan dalam peranti ini sahaja. Muat turun CSV untuk analisis.</p>
+        <div class="table-wrap"><table id="tbl"></table></div>
+        <div class="row">
+          <button id="btnCSV" class="cta small">⬇ Muat turun CSV</button>
+          <button id="btnClear" class="pill danger">🗑 Padam semua rekod</button>
+          <div class="spacer"></div>
+          <button class="pill" data-close>✕ Tutup</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="rotate">📱↻ Pusingkan peranti ke mod landskap</div>
+  </div>
+</div>
+<script src="story.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
