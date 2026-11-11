@@ -896,3 +896,15 @@ td.empty{text-align:center;color:#7a86a0;padding:4cqw}
 .s-ifb .cb-t{display:flex;flex-direction:column;line-height:1.05;font-family:'Lexend',sans-serif}
 .s-ifb .cb-t small{font:600 .7cqw 'Nunito',sans-serif;opacity:.9}
 .s-ifb .cb-else{display:flex}
+
+/* ===== v12: blok cerita (Misi 3.1) ===== */
+.s-story{position:absolute;z-index:4;transform:translate(-50%,-50%);display:flex;flex-direction:column;gap:.5cqw;padding:.8cqw;border-radius:1.2cqw;
+  background:linear-gradient(180deg,rgba(124,58,237,.95),rgba(91,33,182,.95));border:.2cqw solid #c4a5ff;box-shadow:0 .6cqw 1.4cqw rgba(0,0,0,.5)}
+.s-story .st-row{display:flex;align-items:center;gap:.6cqw}
+.s-story .st-tag{flex:0 0 auto;width:4.6cqw;text-align:center;font:700 .72cqw 'Lexend',sans-serif;letter-spacing:.04em;color:#3b0764;background:#e9d5ff;border-radius:2cqw;padding:.25cqw 0}
+.s-story .st-tag.else{background:#d4d4d8;color:#27272a;font-size:.62cqw}
+.s-story .st-line{flex:1;display:flex;flex-direction:column;gap:.3cqw}
+.s-story .st-t{font:700 1.1cqw/1.3 'Nunito',sans-serif;color:#fff}
+.s-story .slot.cbs{min-height:2.9cqw;height:auto;background:rgba(255,255,255,.15)}
+.s-story .slot.cbs em{font-size:.95cqw}
+.s-story .slot.cbs .block{white-space:normal}
