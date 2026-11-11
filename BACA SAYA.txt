@@ -29,7 +29,7 @@ MENUKAR SUARA / GAMBAR
 MISI (12 aktiviti)
 - SEQUENCE   : 1.1 Yasmin ke air pancut · 1.2 Yasmin ke gelanggang bola keranjang · 1.3 Pakcik Omar ke pejabat (misi akhir)
 - LOOP       : 2.1 Kotak Lim · 2.2 Ringkaskan kod panjang Lim dengan ULANG · 2.3 Bina loop 2 langkah (ambil → letak) untuk air kotak
-- CONDITIONAL: 3.1 Jalan Sarah (blok JIKA… MAKA… JIKA TIDAK) · 3.2 Hujan→payung / panas→topi · 3.3 Loceng→kelas / masa PJ→padang
+- CONDITIONAL: 3.1 Jalan Sarah (blok JIKA… MAKA… JIKA TIDAK) · 3.2 Cuaca hujan → buka payung · 3.3 Loceng berbunyi → masuk kelas (semua dalam bentuk ayat cerita)
 - LOGIC      : 4.1 Taman ke Pintu Koding · 4.2 Cari pepijat dalam program · 4.3 Pintu Koding (misi akhir, pintu terbuka ke makmal)
 - Buka terus satu misi: tambah #misi=NAMA pada hujung alamat index.html
   (sequence, sequence2, sequence3, loop, loop2, loop3, conditional, conditional2,
