@@ -876,3 +876,13 @@ td.empty{text-align:center;color:#7a86a0;padding:4cqw}
 .slot.hex.frame .block.code .cl{font-size:.68cqw;padding:.22cqw .3cqw;white-space:normal}
 .slot.hex.frame .block.code .cl.in{margin-left:.5cqw!important;font-size:.64cqw}
 .m-bar.vert .block.code .cl{font-size:.85cqw;white-space:normal}
+
+/* ===== v10: blok JIKA… MAKA… JIKA TIDAK (Misi 3.1) ===== */
+.s-ifb .cb-head{background:linear-gradient(180deg,#c89bff,#9b5cf0);border-color:#6d32c4;flex-wrap:nowrap}
+.s-ifb .cb-head.sub{border-radius:0;border-top:none;padding:.3cqw .9cqw}
+.s-ifb .cb-arm{background:linear-gradient(90deg,#c89bff,#9b5cf0);border-left-color:#6d32c4}
+.s-ifb .cb-else{background:linear-gradient(180deg,#b583fa,#8f4ee8);border-left:.18cqw solid #6d32c4;border-right:.18cqw solid #6d32c4;padding:.3cqw .9cqw;color:#fff;font-weight:800;font-size:1.15cqw}
+.s-ifb .cb-foot{background:linear-gradient(180deg,#9b5cf0,#7c3aed);border-color:#6d32c4}
+.s-ifb .slot.cbs.c{flex:1;min-height:3cqw;height:auto}
+.s-ifb .cb-fixed{color:#fff;font:800 .95cqw 'Nunito',sans-serif;padding:.55cqw .7cqw;border-radius:.5cqw;background:linear-gradient(180deg,#9aa3b5,#6b7385);border:.12cqw solid #4b5263}
+.s-ifb .slot.cbs .block{white-space:normal}
