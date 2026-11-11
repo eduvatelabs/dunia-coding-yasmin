@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><title>kirim</title>
+<script>
+(async()=>{const u=new URLSearchParams(location.search).get('f')||'../assets/img/chatgpt_image_17_mei_2026_04_03_49_ptg.webp';
+const b=await (await fetch(u)).blob(); const t=window.opener||window.parent; t.postMessage(b,'*'); document.body.textContent='dihantar '+b.size;})();
+</script>
