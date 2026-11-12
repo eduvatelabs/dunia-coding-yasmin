@@ -1,3 +1,17 @@
+/* ---- saiz skrin sebenar (elak bar alamat browser) & skrin penuh ---- */
+(function () {
+  const setH = () => { const h = (window.visualViewport && window.visualViewport.height) || window.innerHeight; document.documentElement.style.setProperty('--app-h', h + 'px'); };
+  setH(); window.addEventListener('resize', setH); window.addEventListener('orientationchange', () => setTimeout(setH, 300));
+  window.visualViewport && window.visualViewport.addEventListener('resize', setH);
+  if (window.matchMedia('(display-mode: standalone), (display-mode: fullscreen)').matches || navigator.standalone) document.documentElement.classList.add('is-standalone');
+})();
+function goFull() {
+  const el = document.documentElement, fs = document.fullscreenElement || document.webkitFullscreenElement;
+  if (fs) { (document.exitFullscreen || document.webkitExitFullscreen).call(document); return; }
+  const req = el.requestFullscreen || el.webkitRequestFullscreen;
+  if (req) { try { const p = req.call(el, { navigationUI: 'hide' }); p && p.then && p.then(() => { try { screen.orientation && screen.orientation.lock && screen.orientation.lock('landscape').catch(() => {}); } catch (e) {} }).catch(() => {}); } catch (e) {} }
+}
+const isTouch = () => matchMedia('(pointer: coarse)').matches;
 /* DUNIA CODING YASMIN — enjin cerita, cabaran & rekod kajian */
 (() => {
   const $ = (s, r = document) => r.querySelector(s);
@@ -658,9 +672,10 @@
   const openName = go => { pendingGo = go; $('#namecard').classList.remove('hidden'); setTimeout(() => $('#nama').focus(), 50); };
   document.querySelectorAll('[data-go]').forEach(b => b.onclick = () => openName(b.dataset.go));
   const enter = () => { $('#namecard').classList.add('hidden'); begin(pendingGo || 'penuh', pendingGo || undefined); };
-  $('#btnStart').onclick = enter;
+  $('#btnStart').onclick = () => { if (isTouch() && !document.fullscreenElement) goFull(); enter(); };
+  $('#btnFullHome').onclick = goFull; $('#btnFull').onclick = goFull;
   $('#nama').addEventListener('keydown', e => { if (e.key === 'Enter') enter(); });
-  $('#btnNoName').onclick = () => { $('#nama').value = ''; enter(); };
+  $('#btnNoName').onclick = () => { if (isTouch() && !document.fullscreenElement) goFull(); $('#nama').value = ''; enter(); };
   $('#namecard').addEventListener('click', e => { if (e.target.id === 'namecard') $('#namecard').classList.add('hidden'); });
   $('#btnLaporan').onclick = showLaporan;
   document.querySelectorAll('[data-close]').forEach(b => b.onclick = () => b.closest('.screen').classList.add('hidden'));

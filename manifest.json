@@ -1,0 +1,13 @@
+{
+  "name": "Dunia Coding Yasmin",
+  "short_name": "Dunia Coding",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#0b1a3a",
+  "theme_color": "#0b1a3a",
+  "icons": [
+    { "src": "icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

@@ -14,8 +14,8 @@ button{font:inherit;cursor:pointer;border:0}
 .hidden{display:none!important}
 
 /* ---- pentas 16:9 ---- */
-#frame{position:fixed;inset:0;display:grid;place-items:center}
-#stage{position:relative;width:min(100vw,177.78vh);height:min(56.25vw,100vh);overflow:hidden;background:#000;
+#frame{position:fixed;left:0;top:0;width:100%;height:var(--app-h,100dvh);display:grid;place-items:center}
+#stage{position:relative;width:min(100vw,calc(var(--app-h,100dvh) * 1.7778));height:min(56.25vw,var(--app-h,100dvh));overflow:hidden;background:#000;
   container-type:size;user-select:none;-webkit-user-select:none}
 /* unit: 1cqw = 1% lebar pentas */
 
@@ -908,3 +908,10 @@ td.empty{text-align:center;color:#7a86a0;padding:4cqw}
 .s-story .slot.cbs{min-height:2.9cqw;height:auto;background:rgba(255,255,255,.15)}
 .s-story .slot.cbs em{font-size:.95cqw}
 .s-story .slot.cbs .block{white-space:normal}
+
+/* ===== v13: skrin penuh & saiz ikut ruang sebenar ===== */
+html,body{height:100%;overflow:hidden;overscroll-behavior:none}
+.btn-full{position:absolute;z-index:30;top:2%;left:1.5%;display:flex;align-items:center;gap:.5cqw;padding:.6cqw 1.1cqw;border:none;border-radius:2cqw;cursor:pointer;
+  background:rgba(9,20,52,.8);color:#fff;font:700 1cqw 'Lexend',sans-serif;box-shadow:0 .3cqw .8cqw rgba(0,0,0,.4);border:.12cqw solid rgba(255,255,255,.35)}
+.btn-full:hover{background:rgba(30,60,140,.9)}
+:fullscreen .btn-full.home,.is-standalone .btn-full.home{display:none}

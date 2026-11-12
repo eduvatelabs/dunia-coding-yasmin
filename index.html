@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b1a3a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.json">
 <title>Dunia Coding Yasmin</title>
 <meta name="description" content="App storytelling interaktif: belajar Sequence, Loop, Conditional dan Logic bersama Yasmin. Oleh Eduvate Labs.">
 <meta property="og:type" content="website">
@@ -39,6 +43,7 @@
     <div id="hud" class="hidden">
       <button id="btnMenu" class="pill" aria-label="Menu utama">🏠 Menu</button>
       <div class="spacer"></div>
+      <button id="btnFull" class="pill" aria-label="Skrin penuh">⛶</button>
       <button id="btnCC" class="pill" aria-label="Sari kata">💬 Sari kata</button>
       <button id="btnSound" class="pill" aria-label="Bunyi">🔊</button>
       <button id="btnAuto" class="pill" aria-label="Auto main">⏯ Auto</button>
@@ -63,6 +68,7 @@
         <button class="hot cc loop" data-go="loop" aria-label="Loop"></button>
         <button class="hot cc cond" data-go="conditional" aria-label="Conditional"></button>
         <button class="hot cc logic" data-go="logic" aria-label="Logic"></button>
+        <button id="btnFullHome" class="btn-full home" aria-label="Skrin penuh">⛶ Skrin Penuh</button>
         <button id="btnLaporan" class="hot-lap" aria-label="Laporan kajian">📊<span>Laporan</span></button>
       </div>
       <div id="namecard" class="hidden">
